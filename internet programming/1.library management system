@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library Management System</title>
+    <!-- Include your CSS files for styling -->
+</head>
+
+<body>
+
+    <!-- Librarian Admin Login -->
+    <section id="librarian-login">
+        <h2>Librarian Admin Login</h2>
+        <form action="librarian_login.php" method="post">
+            <!-- Librarian Login Form -->
+            Username: <input type="text" name="librarian_username" required><br>
+            Password: <input type="password" name="librarian_password" required><br>
+            <input type="submit" value="Login">
+        </form>
+    </section>
+
+    <!-- Librarian Admin Functions -->
+    <section id="librarian-functions">
+        <h2>Librarian Admin Functions</h2>
+
+        <!-- Add Book Form -->
+        <form action="add_book.php" method="post">
+            <!-- Form fields for adding a book -->
+            Book Title: <input type="text" name="book_title" required><br>
+            Author: <input type="text" name="author" required><br>
+            <!-- Include other book details -->
+            <input type="submit" value="Add Book">
+        </form>
+
+        <!-- Update/Delete Book Form -->
+        <form action="update_delete_book.php" method="post">
+            <!-- Form fields for updating/deleting a book -->
+            Book ID: <input type="text" name="book_id" required><br>
+            <!-- Include other update/delete options -->
+            <input type="submit" value="Update/Delete Book">
+        </form>
+
+        <!-- Issue Book Form -->
+        <form action="issue_book.php" method="post">
+            <!-- Form fields for issuing a book to a student -->
+            Student ID: <input type="text" name="student_id" required><br>
+            Book ID: <input type="text" name="book_id" required><br>
+            <!-- Include other issue book details -->
+            <input type="submit" value="Issue Book">
+        </form>
+
+        <!-- Return Book Status Form -->
+        <form action="return_book.php" method="post">
+            <!-- Form fields for updating the book return status -->
+            Student ID: <input type="text" name="student_id" required><br>
+            Book ID: <input type="text" name="book_id" required><br>
+            <!-- Include other return book details -->
+            <input type="submit" value="Return Book">
+        </form>
+
+        <!-- Make Fine Form -->
+        <form action="make_fine.php" method="post">
+            <!-- Form fields for making fines -->
+            Student ID: <input type="text" name="student_id" required><br>
+            <!-- Include other make fine details -->
+            <input type="submit" value="Make Fine">
+        </form>
+
+        <!-- Update Material Form -->
+        <form action="update_material.php" method="post">
+            <!-- Form fields for updating material (year, semester wise) -->
+            <!-- Include other material update details -->
+            <input type="submit" value="Update Material">
+        </form>
+
+        <!-- View Material Section -->
+        <div id="view-material">
+            <h3>Material Information</h3>
+            <!-- Display material information -->
+        </div>
+    </section>
+
+    <!-- User Login and Registration -->
+    <section id="user-authentication">
+        <h2>User Authentication</h2>
+        <form action="user_login.php" method="post">
+            <!-- User Login Form -->
+            Username: <input type="text" name="user_username" required><br>
+            Password: <input type="password" name="user_password" required><br>
+            <input type="submit" value="Login">
+        </form>
+
+        <form action="user_register.php" method="post">
+            <!-- User Registration Form -->
+            <!-- Include registration form fields -->
+            <input type="submit" value="Register">
+        </form>
+    </section>
+
+    <!-- User Functions -->
+    <section id="user-functions">
+        <h2>User Functions</h2>
+
+        <!-- Book Search Section -->
+        <div id="book-search">
+            <h3>Book Search</h3>
+            <!-- Search bar and results for book search -->
+        </div>
+
+        <!-- Borrow History Section -->
+        <div id="borrow-history">
+            <h3>Borrow History</h3>
+            <!-- Display user's borrowing history with issue date, expiration date -->
+        </div>
+
+        <!-- Check Fine Section -->
+        <div id="check-fine">
+            <h3>Check Fine</h3>
+            <!-- Display fine information for the user -->
+        </div>
+
+        <!-- Material Search and Download Section -->
+        <div id="material-section">
+            <h3>Material Information</h3>
+            <!-- Search bar and results for material search -->
+            <!-- Download link for material -->
+        </div>
+
+        <!-- User Profile Section -->
+        <div id="user-profile">
+            <h3>User Profile</h3>
+            <!-- Display user profile information -->
+        </div>
+    </section>
+
+    <!-- Include your JavaScript files for interactive features -->
+
+</body>
+
+</html>
