@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Booking System</title>
+    <!-- Include your CSS files for styling -->
+</head>
+
+<body>
+    <header>
+    <h1>Welcome to our hotel</h1>
+    </header>
+
+    <!-- User Registration Form -->
+    <section id="user-registration">
+        <h2>User Registration</h2>
+        <form action="user_registration.php" method="post">
+            <!-- Registration form fields -->
+            Username: <input type="text" name="username" required><br>
+            Password: <input type="password" name="password" required><br>
+            <!-- Include other user registration details -->
+            <input type="submit" value="Register">
+        </form>
+    </section>
+
+    <!-- User Profile Section -->
+    <section id="user-profile">
+        <h2>User Profile</h2>
+        <!-- Display user profile information -->
+        <!-- Include options to modify user profile -->
+    </section>
+
+    <!-- Room Booking Section -->
+    <section id="room-booking">
+        <h2>Room Booking</h2>
+        <form action="room_booking.php" method="post">
+            <!-- Room booking form fields -->
+            Arrival Date: <input type="date" name="arrival_date" required><br>
+            <!-- Include other room booking details -->
+            <input type="submit" value="Book Room">
+        </form>
+
+        <!-- Booking History Section -->
+        <div id="booking-history">
+            <h3>Booking History</h3>
+            <!-- Display user's booking history -->
+        </div>
+
+        <!-- Change Booking Section -->
+        <section id="change-booking">
+            <h3>Change Booking</h3>
+            <form action="change_booking.php" method="post">
+                <!-- Change booking form fields -->
+                <!-- Include options to select booking to change -->
+                <input type="submit" value="Change Booking">
+            </form>
+        </section>
+
+        <!-- Cancel Booking Section -->
+        <section id="cancel-booking">
+            <h3>Cancel Booking</h3>
+            <form action="cancel_booking.php" method="post">
+                <!-- Cancel booking form fields -->
+                <!-- Include options to select booking to cancel -->
+                <input type="submit" value="Cancel Booking">
+            </form>
+        </section>
+
+        <!-- Check Room Availability Section -->
+        <section id="check-availability">
+            <h3>Check Room Availability</h3>
+            <form action="check_availability.php" method="post">
+                <!-- Check availability form fields -->
+                Arrival Date: <input type="date" name="arrival_date" required><br>
+                <!-- Include other availability check details -->
+                <input type="submit" value="Check Availability">
+            </form>
+        </section>
+    </section>
+
+    <!-- Administrator Section -->
+    <section id="administrator-section">
+        <h2>Administrator</h2>
+
+        <!-- Room Quantity
