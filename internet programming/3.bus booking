@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bus Ticket Booking System</title>
+    <!-- Include your CSS files for styling -->
+</head>
+
+<body>
+<header>
+<h1>WELCOME TO OUR WEB</h1>
+
+    <!-- Admin Login Section -->
+    <section id="admin-login">
+        <h2>Admin Login</h2>
+        <form action="admin_login.php" method="post">
+            <!-- Admin login form fields -->
+            Username: <input type="text" name="admin_username" required><br>
+            Password: <input type="password" name="admin_password" required><br>
+            <input type="submit" value="Login">
+        </form>
+    </section>
+
+    <!-- User Registration Section -->
+    <section id="user-registration">
+        <h2>User Registration</h2>
+        <form action="user_registration.php" method="post">
+            <!-- User registration form fields -->
+            Username: <input type="text" name="user_username" required><br>
+            Password: <input type="password" name="user_password" required><br>
+            <!-- Include other user registration details -->
+            <input type="submit" value="Register">
+        </form>
+    </section>
+
+    <!-- Book Ticket Section -->
+    <section id="book-ticket">
+        <h2>Book Ticket</h2>
+        <form action="book_ticket.php" method="post">
+            <!-- Book ticket form fields -->
+            Bus Type: <select name="bus_type" required>
+                <option value="volvo">Volvo</option>
+                <option value="slipper_coach">Slipper Coach</option>
+                <option value="coach">Coach</option>
+            </select><br>
+            <!-- Include other booking details -->
+            <input type="submit" value="Book Ticket">
+        </form>
+    </section>
+
+    <!-- Update Bus Information Section -->
+    <section id="update-bus-info">
+        <h2>Update Bus Information</h2>
+        <form action="update_bus_info.php" method="post">
+            <!-- Update bus information form fields -->
+            Bus Type: <select name="bus_type" required>
+                <option value="volvo">Volvo</option>
+                <option value="slipper_coach">Slipper Coach</option>
+                <option value="coach">Coach</option>
+            </select><br>
+            <!-- Include other bus information details to update -->
+            <input type="submit" value="Update Bus Information">
+        </form>
+    </section>
+
+    <!-- Cancel Booking Section -->
+    <section id="cancel-booking">
+        <h2>Cancel Booking</h2>
+        <form action="cancel_booking.php" method="post">
+            <!-- Cancel booking form fields -->
+            <!-- Include options to select booking to cancel -->
+            <input type="submit" value="Cancel Booking">
+        </form>
+    </section>
+
+    <!-- Post Comments Section -->
+    <section id="post-comments">
+        <h2>Post Comments</h2>
+        <form action="post_comments.php" method="post">
+            <!-- Post comments form fields -->
+            <!-- Include options to select the bus and post comments -->
+            <textarea name="user_comment" rows="4" cols="50" required></textarea><br>
+            <input type="submit" value="Post Comment">
+        </form>
+    </section>
+
+    <!-- Report Generation Section -->
+    <section id="report-generation">
+        <h2>Report Generation</h2>
+        <form action="generate_report.php" method="post">
+            <!-- Report generation form fields -->
+            <!-- Include options to select report parameters -->
+            <input type="submit" value="Generate Report">
+        </form>
+    </section>
+
+    <!-- Include your JavaScript files for interactive features -->
+
+</body>
+
+</html>
